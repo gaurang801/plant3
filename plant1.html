@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(11, 11, 60);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: rgba(126, 17, 251, 0.812);
+      flex-wrap: wrap;
+    }
+
+    nav .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+    }
+
+    /* First Section */
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 1200px;
+    }
+
+    .leftsection {
+      font-size: 2rem;
+      flex: 1 1 350px;
+      padding: 20px;
+    }
+
+    .rightsection {
+      flex: 1 1 350px;
+      text-align: center;
+    }
+
+    .rightsection img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .purple {
+      color: rgb(242, 162, 59);
+    }
+
+    #about {
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .keyfont {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .wiki {
+      color: white;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+
+    #element {
+      color: yellow;
+    }
+
+    #key {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    #section a {
+      margin-right: 11%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        margin-top: 10px;
+      }
+
+      .firstsection {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .leftsection {
+        font-size: 1.6rem;
+        margin: 10px 0;
+      }
+
+      #about {
+        font-size: 0.9rem;
+      }
+
+      .keyfont {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav .left {
+        font-size: 1.2rem;
+      }
+
+      nav ul li a {
+        font-size: 0.9rem;
+      }
+
+      .leftsection {
+        font-size: 1.2rem;
+      }
+
+      .rightsection img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="left">Codiaeum Variegation</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#key">Features</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Codiaeum_variegatum" target="_blank">More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        <span class="purple"> Codiaeum Variegation</span>
+        <div>Also Known as</div>
+        <span id="element"></span>
+        <div id="about">
+          <p><b>Scientific Name:</b> Codiaeum variegatum <br>
+            <b>Common Name:</b> Croton Petra <br>
+            <b>Family:</b> Euphorbiaceae <br>
+            <b>Type:</b> Evergreen shrub <br>
+            <b>Origin:</b> Southeast Asia and Pacific Islands <br> </p>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img
+          src="https://image2url.com/images/1755511915357-a557b4db-ecff-4b3c-adc5-c81f30d6417a.jpg"
+          alt="style">
+      </div>
+    </section>
+
+    <section id="key">
+      <b class="keyfont">Key Features</b>
+      <p>
+        <b>Leaves: </b>Bright, multi-colored (yellow, red, orange, green), glossy, and leathery. <br>
+        <b>Height:</b> Grows up to 3-6 feet indoors; taller outdoors. <br>
+        <b>Light Requirement:</b> Needs bright indirect sunlight. Some direct morning sun is fine. <br>
+        <b>Watering:</b> Keep the soil moist but not soggy. Let the top inch of soil dry before watering again. <br>
+        <b>Soil:</b> Well-draining potting mix with peat and perlite. <br>
+        <b>Temperature: </b>Prefers 18°C to 30°C. Sensitive to cold and drafts. <br>
+        <b>Humidity:</b> Loves high humidity. Mist the leaves or use a humidifier <br>
+      </p>
+
+      <b class="keyfont"> 🌱 Care tips</b>
+      <p>
+        Do not move it frequently; it can drop leaves. <br>
+        Wipe leaves regularly to keep them dust-free. <br>
+        Fertilize every 4-6 weeks during growing season (spring/summer). <br>
+        Toxic to pets and humans if ingested. <br>
+      </p>
+
+      <a class="wiki" href="https://en.wikipedia.org/wiki/Codiaeum_variegatum" target="_blank">View More</a>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Croton Petra', 'क्रोटन पेट्रा'],
+      typeSpeed: 50,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+
+</body>
+</html>
